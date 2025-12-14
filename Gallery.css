@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+body{
+    position: relative;
+    background-color: #162043;
+}
+
+.header{
+    font-family:sans-serif;
+    padding-top: 20px;
+    height: 10vh;
+    padding-left: 70px;
+    font-size: 45px;
+    color: #CAD2E3;
+    user-select: none;
+    letter-spacing: 3px;
+}
+
+.pictures{
+    height: max-content;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(190px,1fr)) ;
+    grid-template-rows: 0.4fr 0.4fr;
+    gap: 25px;
+    justify-content: center;
+    padding-left: 5%;
+    align-items: center;
+    
+    padding-bottom: 50px;
+
+}
+.pictures  img{
+    object-fit: contain;
+    border: 3px solid #25364A;
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    
+    
+}
+
+
+.pictures img:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+
+.bigscreen{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.703);
+    height: 100vh;
+    z-index: 100;
+}
+
+.bigscreen .left{
+    height: max-content;
+    font-size: xx-large;
+    width: max-content;
+    color: rgb(238, 237, 237);
+    
+    padding: 20px 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.bigscreen .close{
+    position: absolute;
+    height: max-content;
+    font-size: xx-large;
+    width: max-content;
+    color: rgb(238, 237, 237);
+    top: 0;
+    padding: 20px 30px;
+    cursor: pointer;
+    right: 30px;
+    user-select: none;
+}
+
+.bigscreen .right{
+    height: max-content;
+    font-size: xx-large;
+    width: max-content;
+    color: rgb(238, 237, 237);
+    padding: 0px 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left:hover, .right:hover {
+    opacity: 1;}
+.bigscreen img{
+    
+    max-height: 600px;
+    width: auto;
+    max-width: 95%;
+}
